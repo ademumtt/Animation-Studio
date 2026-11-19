@@ -1,0 +1,12 @@
+{
+  "name": "Marka Adı",
+  "sektor": "genel",
+  "accent": "#1F3A8A",
+  "accentText": "#ffffff",
+  "highlight": "#F6C26B",
+  "dark": "#14275E",
+  "logo": "jobs/<slug>/marka/logo.png",
+  "konum": "İlçe · Şehir",
+  "cta": { "kanal": "whatsapp", "buton": "WhatsApp'tan Yaz" },
+  "_not": "Kopyala: _sistem/kurgu/<Müşteri>/marka.json. accent = koyu marka rengi (kart zemini), highlight = acik vurgu (koyu zeminde yazi/parlama), dark = buton. cta.kanal: whatsapp | telefon | adres | web. sektor: kuafor | genel | ... (cizim seciminde kullanilir). Logo yoksa logo alanini sil; kapanis marka adini yazar. Renkler logodan cikarilir."
+}

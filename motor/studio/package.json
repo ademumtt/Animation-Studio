@@ -1,0 +1,33 @@
+{
+  "name": "ajans-studio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Reklam videolari icin animasyon motoru (Remotion)",
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "render": "node scripts/render.mjs"
+  },
+  "dependencies": {
+    "@remotion/bundler": "4.0.537",
+    "@remotion/cli": "4.0.537",
+    "@remotion/google-fonts": "4.0.537",
+    "@remotion/media": "4.0.537",
+    "@remotion/motion-blur": "4.0.537",
+    "@remotion/noise": "4.0.537",
+    "@remotion/paths": "4.0.537",
+    "@remotion/renderer": "4.0.537",
+    "@remotion/shapes": "4.0.537",
+    "@remotion/transitions": "4.0.537",
+    "gsap": "3.15.1",
+    "react": "19.1.1",
+    "react-dom": "19.1.1",
+    "remotion": "4.0.537"
+  },
+  "devDependencies": {
+    "@types/react": "19.1.12",
+    "typescript": "5.9.2"
+  },
+  "allowScripts": {
+    "esbuild@0.28.1": true
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "_aciklama": "ÖRNEK TASLAK (motorun beğenilmiş dili). Yeni videoda yapı/tema/geçiş/sahne seçimi için başlangıç; kelime numaraları (#) bu örneğin sesine aittir, kendi transkriptine göre değiştir. Akış: night kanca -> light/brand/night dönüşümlü -> ring/wipe sırayla -> 2 device sahnesi -> 3B takvim + hediye -> güven (refund, shield) -> kapanış.",
+  "job": "jobs/ornek-ajans",
+  "brand": {
+    "name": "Örnek Ajans",
+    "accent": "#161616",
+    "accentText": "#ffffff",
+    "highlight": "#C4F82A",
+    "dark": "#0E0E0E",
+    "tint": "#C4F82A"
+  },
+  "_senaryo": "Ürünün iyi. Hizmetin kaliteli. Ama müşteriler seni hâlâ bulamıyor mu? Paylaşım yapıyorsun, reklama para harcıyorsun ama sonuç yok. Üstelik vaktin de gidiyor. Biz işini büyütmek için strateji kuruyoruz. İçerikten reklama kadar her adımı ölçüyor, sonuca odaklanıyoruz. Bize sadece bir ay ver. Farkı göremezsen, paranı geri alırsın. Hiçbir risk almadan dene. Kaybedecek bir şeyin yok, kazanacağın çok şey var. Hemen mesaj at, işini birlikte büyütelim.",
+  "clips": ["Seslendirme 1"],
+  "voiceOnly": ["Seslendirme 1"],
+  "captions": false,
+  "altZoom": false,
+  "fix": {
+    "Seslendirme 1#7": "hâlâ",
+    "Seslendirme 1#39": "ay"
+  },
+  "overlays": [
+    {
+      "type": "film",
+      "at": "Seslendirme 1@start",
+      "until": "Seslendirme 1@end",
+      "untilShift": 2.4,
+      "sfx": false,
+      "gecisSesi": false,
+      "beats": [
+        { "at": "Seslendirme 1#0", "theme": "night", "small": "Ürünün iyi,", "big": "hizmetin kaliteli.", "bigAt": "Seslendirme 1#2", "art": "star" },
+        { "at": "Seslendirme 1#4", "theme": "light", "trans": "ring", "small": "Ama müşteriler seni", "big": "hâlâ bulamıyor mu?", "bigAt": "Seslendirme 1#7",
+          "device": { "ui": "search", "query": "en iyi hizmet yakınımda", "cam": "fly" } },
+        { "at": "Seslendirme 1#10", "theme": "night", "trans": "wipe", "small": "Paylaşım yapıyorsun,", "bigAt": "Seslendirme 1#12",
+          "seq": [ { "at": "Seslendirme 1#12", "text": "reklama para harcıyorsun," }, { "at": "Seslendirme 1#15", "text": "ama sonuç yok." } ],
+          "device": { "ui": "ads", "cam": "tilt", "zeroAt": "Seslendirme 1#16" } },
+        { "at": "Seslendirme 1#18", "theme": "light", "trans": "ring", "small": "Üstelik", "big": "vaktin de gidiyor.", "bigAt": "Seslendirme 1#19", "art": "clock" },
+        { "at": "Seslendirme 1#22", "theme": "brand", "trans": "wipe", "small": "Biz işini büyütmek için", "big": "strateji kuruyoruz.", "bigAt": "Seslendirme 1#26", "art": "check" },
+        { "at": "Seslendirme 1#28", "theme": "night", "trans": "ring", "small": "Her adımı ölçüyor,", "big": "sonuca odaklanıyoruz.", "bigAt": "Seslendirme 1#34",
+          "device": { "ui": "stats", "label": "Sonuçlar", "hideValue": true, "cam": "orbit",
+            "pops": [
+              { "at": "Seslendirme 1#28", "title": "İçerik", "sub": "Planlandı", "side": "l" },
+              { "at": "Seslendirme 1#29", "title": "Reklam", "sub": "Yayında", "side": "r" },
+              { "at": "Seslendirme 1#33", "title": "Ölçüm", "sub": "Her adım", "side": "l" }
+            ] } },
+        { "at": "Seslendirme 1#36", "theme": "light", "trans": "wipe", "small": "Bize sadece", "big": "bir ay ver.", "block": true, "bigAt": "Seslendirme 1#38",
+          "obj": { "kind": "calendar", "pages": ["1", "15", "30"], "caption": "GÜN" } },
+        { "at": "Seslendirme 1#41", "theme": "glow", "trans": "ring", "small": "Farkı göremezsen,", "big": "paranı geri alırsın.", "bigAt": "Seslendirme 1#43", "art": "refund" },
+        { "at": "Seslendirme 1#46", "theme": "brand", "trans": "wipe", "small": "Hiçbir", "big": "risk almadan dene.", "bigAt": "Seslendirme 1#47", "art": "shield" },
+        { "at": "Seslendirme 1#50", "theme": "light", "trans": "ring", "small": "Kaybedecek bir şeyin yok,", "big": "kazanacağın çok şey var.", "bigAt": "Seslendirme 1#54", "obj": { "kind": "gift" } },
+        { "at": "Seslendirme 1#58", "theme": "brand", "trans": "wipe", "small": "Hemen mesaj at,", "big": "işini birlikte büyütelim.", "bigAt": "Seslendirme 1#61", "art": "chat" },
+        { "at": "Seslendirme 1@end", "theme": "night", "trans": "ring", "big": "Örnek Ajans", "button": "Hemen Mesaj At",
+          "_not": "Logo varsa: \"logo\": \"jobs/<slug>/marka/logo.png\", \"logoW\": 0.42 ve big'i sil." }
+      ]
+    }
+  ],
+  "extraEnd": 2.4
+}
